@@ -19,6 +19,7 @@
     text(sum, 10, 1525);
   }
   void mouseClicked() {
+    background(0);
     redraw();
   }
   class Die //models one single dice cube
