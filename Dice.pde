@@ -1,22 +1,22 @@
   void setup() {
       noLoop();
-      size(1000,1050);
+      size(1500,1550);
       background(0);
   }
   int sum = 0;
   int siz = 10;
   void draw() {
     //your code here
-    for(int row = 0; row <101; row++) {
+    for(int row = 0; row <151; row++) {
       //int diceDice = 0;
-      for(int col = 0; col  < 101; col++){
+      for(int col = 0; col  < 151; col++){
         Die dice = new Die(col*10, row*10, siz);
         dice.roll();
         sum += dice.forTotal();
       }
     }
     fill(255);
-    text(sum, 10, 1025);
+    text(sum, 10, 1525);
   }
   void mouseClicked() {
     redraw();
