@@ -1,6 +1,6 @@
   void setup() {
       noLoop();
-      size(1000,1000);
+      size(1000,1050);
       background(0);
   }
   int sum = 0;
@@ -15,7 +15,8 @@
         sum += dice.forTotal();
       }
     }
-    //text(sum, 250, 250);
+    fill(255);
+    text(sum, 10, 1025);
   }
   void mouseClicked() {
     redraw();
