@@ -20,6 +20,7 @@
   }
   void mouseClicked() {
     background(0);
+    sum = 0;
     redraw();
   }
   class Die //models one single dice cube
